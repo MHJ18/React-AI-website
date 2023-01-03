@@ -1,0 +1,55 @@
+html {
+  font-size: 62.5%;
+}
+.container {
+  margin: 0 auto;
+}
+.gpt__navbar-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 2.5rem 5rem 0 5rem;
+  gap: 3rem;
+}
+.links-flex li a {
+  margin-bottom: 1.8rem;
+}
+.gpt__navbar-logo img {
+  max-width: 6.2rem;
+  height: 1.8rem;
+}
+.icon-nav-menu {
+  color: white;
+  font-size: 2.7rem;
+}
+.gpt__navbar-links {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navbar-links {
+  margin: 0 1.5rem;
+  list-style-type: none;
+  display: inline-block;
+}
+.navbar-links a {
+  line-height: 1.5;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  cursor: pointer;
+  /* display: inline-block; */
+}
+.gpt__navbar-buttons {
+  /* margin-left: auto; */
+}
+.font-style {
+  font-family: var(--font-family);
+  font-weight: 500;
+}
+button:first-of-type {
+  cursor: pointer;
+  background: none;
+  color: wheat;
+}

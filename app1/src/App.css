@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: var(--color-bg);
+  color: wheat;
+}
+a:link,
+a:active {
+  color: unset;
+  text-decoration: none;
+  display: inline-block;
+}
+.font-4 {
+  font-size: 4rem;
+}
+.gradiant-text {
+  background: var(--gradiant-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section-padding {
+  padding: 5rem 6rem;
+}
+.section-margin {
+  margin: 4rem 6rem;
+}
+
+/* Animista animation */
+.flip-2 {
+  -webkit-animation: flip-2 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: flip-2 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+/* ----------------------------------------------*/
+
+@-webkit-keyframes flip-2 {
+  0% {
+    -webkit-transform: translateY(0) rotateX(0);
+    transform: translateY(0) rotateX(0);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+  100% {
+    -webkit-transform: translateY(-100%) rotateX(-180deg);
+    transform: translateY(-100%) rotateX(-180deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+}
+@keyframes flip-2 {
+  0% {
+    -webkit-transform: translateY(0) rotateX(0);
+    transform: translateY(0) rotateX(0);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+  100% {
+    -webkit-transform: translateY(-100%) rotateX(-180deg);
+    transform: translateY(-100%) rotateX(-180deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+}
+
+/*Angrt Tools.com  */
+.gradiant__bg {
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(circle at 3% 10%, #002853 0%, #040c18 100%);
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 3% 10%,
+    #002853 0%,
+    #040c18 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(circle at 3% 10%, #002853 0%, #040c18 100%);
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(circle at 3% 10%, #002853 0%, #040c18 100%);
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(circle at 3% 10%, #002853 0%, #040c18 100%);
+}
+
+/* Media Queries */
+@media screen and (max-width: 800px) {
+  .section-padding {
+    padding: 4rem 5rem;
+  }
+  .section-margin {
+    margin: 3rem 5rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .section-padding {
+    padding: 4rem 2rem;
+  }
+  .section-margin {
+    margin: 3rem 2rem;
+  }
+}
